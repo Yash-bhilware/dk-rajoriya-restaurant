@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Rajoriya Family Restaurant - Authentic Indian Cuisine in Bhopal</title>
+    <meta name="description" content="Experience authentic North Indian cuisine at DK Rajoriya Family Restaurant. Traditional recipes, fresh ingredients, and warm hospitality in the heart of Bhopal.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='/images/hero-thali.jpg') }}" width="100px" alt="DK Rajoriya Logo"> <h1>DK Rajoriya</h1>
+                <p class="tagline">Family Restaurant</p>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#thali">Thali</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Food Image -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <a href="#menu" class="cta-button">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-description">
+                        At DK Rajoriya Family Restaurant, we believe that food is more than just sustenance—it's a celebration of culture, tradition, and togetherness. Our journey began with a simple vision: to bring authentic North Indian flavors to the heart of Bhopal.
+                    </p>
+                    <p class="about-description">
+                        Every dish on our menu is crafted with love, using traditional recipes passed down through generations. We source the finest ingredients and prepare each meal with meticulous care, ensuring that every bite takes you on a culinary journey through the vibrant streets of India.
+                    </p>
+                    <p class="about-description">
+                        From our rich, creamy curries to our aromatic biryanis, every item reflects our commitment to authenticity and quality. We welcome you to join our family and experience the warmth of Indian hospitality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Thali Section -->
+    <section id="thali" class="section thali-section">
+        <div class="container">
+            <h2 class="section-title">Special Thali</h2>
+            <p class="section-subtitle">Complete meals that bring together the best of Indian cuisine</p>
+            <div class="thali-grid">
+                <div class="thali-card featured">
+                    <div class="thali-badge">Most Popular</div>
+                    <h3>Special Thali</h3>
+                    <div class="price">₹169<span class="currency">/-</span></div>
+                    <p class="thali-desc">A complete feast featuring dal makhani, paneer curry, seasonal vegetables, basmati rice, freshly made roti, raita, pickle, and traditional dessert. A perfect introduction to our flavors.</p>
+                    <ul class="thali-items">
+                        <li>Dal Makhani or Dal Tadka</li>
+                        <li>Paneer Curry (Shahi/Kadai/Butter Masala)</li>
+                        <li>Seasonal Vegetable Curry</li>
+                        <li>Basmati Rice</li>
+                        <li>Fresh Roti (2 pcs)</li>
+                        <li>Raita & Pickle</li>
+                        <li>Dessert (Gulab Jamun/Rasgulla)</li>
+                    </ul>
+                </div>
+                <div class="thali-card">
+                    <h3>Deluxe Thali</h3>
+                    <div class="price">₹130<span class="currency">/-</span></div>
+                    <p class="thali-desc">A premium selection with two curries, special rice preparation, and additional accompaniments.</p>
+                    <ul class="thali-items">
+                        <li>Two Curries (Dal + Paneer/Veg)</li>
+                        <li>Jeera Rice or Pulao</li>
+                        <li>Fresh Roti (2 pcs)</li>
+                        <li>Raita & Pickle</li>
+                        <li>Dessert</li>
+                    </ul>
+                </div>
+                <div class="thali-card">
+                    <h3>Classic Thali</h3>
+                    <div class="price">₹99<span class="currency">/-</span></div>
+                    <p class="thali-desc">A wholesome meal with dal, vegetable curry, rice, and roti—perfect for everyday dining.</p>
+                    <ul class="thali-items">
+                        <li>Dal Tadka or Dal Fry</li>
+                        <li>Vegetable Curry</li>
+                        <li>Plain Rice</li>
+                        <li>Fresh Roti (2 pcs)</li>
+                        <li>Raita</li>
+                    </ul>
+                </div>
+                <div class="thali-card">
+                    <h3>Basic Thali</h3>
+                    <div class="price">₹79<span class="currency">/-</span></div>
+                    <p class="thali-desc">A simple yet satisfying meal with dal, rice, and roti—great value for money.</p>
+                    <ul class="thali-items">
+                        <li>Dal Fry</li>
+                        <li>Plain Rice</li>
+                        <li>Fresh Roti (2 pcs)</li>
+                        <li>Raita</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="packing-note">
+                <span class="note-icon">📦</span>
+                <span>All Thali Packing Charge ₹10/- Only</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Discover our extensive selection of traditional Indian dishes</p>
+            
+            <!-- DAL Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🥘</span>
+                    <span>DAL (Lentils)</span>
+                </h3>
+                <p class="category-description">Hearty lentil preparations, slow-cooked to perfection with traditional spices</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Dal Fry</span><span class="price">₹29 / ₹59</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Tadka</span><span class="price">₹39 / ₹79</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Makhani</span><span class="price">₹49 / ₹89</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Palak</span><span class="price">₹49 / ₹89</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Handi</span><span class="price">₹59 / ₹109</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Bukhara</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Panchratan</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Lasuni</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Fry Butter</span><span class="price">₹39 / ₹79</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Tadka Butter</span><span class="price">₹49 / ₹89</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Makhani Butter</span><span class="price">₹59 / ₹99</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Palak Butter</span><span class="price">₹59 / ₹99</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Handi Butter</span><span class="price">₹69 / ₹119</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Bukhara Butter</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Panchratan Butter</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Dal Lasuni Butter</span><span class="price">₹79 / ₹139</span></div>
+                </div>
+            </div>
+
+            <!-- STARTERS Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🍢</span>
+                    <span>STARTERS</span>
+                </h3>
+                <p class="category-description">Crispy, flavorful appetizers to kickstart your meal</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Paneer Tikka</span><span class="price">₹120 / ₹220</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Pakora</span><span class="price">₹100 / ₹180</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Pakora</span><span class="price">₹80 / ₹150</span></div>
+                    <div class="menu-item"><span class="item-name">Onion Pakora</span><span class="price">₹70 / ₹130</span></div>
+                    <div class="menu-item"><span class="item-name">Mix Veg Pakora</span><span class="price">₹90 / ₹170</span></div>
+                    <div class="menu-item"><span class="item-name">Spring Roll</span><span class="price">₹110 / ₹200</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Cutlet</span><span class="price">₹80 / ₹150</span></div>
+                    <div class="menu-item"><span class="item-name">French Fries</span><span class="price">₹70 / ₹130</span></div>
+                    <div class="menu-item"><span class="item-name">Chilli Paneer</span><span class="price">₹130 / ₹240</span></div>
+                    <div class="menu-item"><span class="item-name">Chilli Mushroom</span><span class="price">₹120 / ₹220</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Manchurian</span><span class="price">₹110 / ₹200</span></div>
+                    <div class="menu-item"><span class="item-name">Gobi Manchurian</span><span class="price">₹100 / ₹180</span></div>
+                    <div class="menu-item"><span class="item-name">Mushroom Tikka</span><span class="price">₹120 / ₹220</span></div>
+                    <div class="menu-item"><span class="item-name">Hara Bhara Kebab</span><span class="price">₹110 / ₹200</span></div>
+                    <div class="menu-item"><span class="item-name">Dahi Ke Kebab</span><span class="price">₹120 / ₹220</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Seekh Kebab</span><span class="price">₹110 / ₹200</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Seekh Kebab</span><span class="price">₹130 / ₹240</span></div>
+                </div>
+            </div>
+
+            <!-- PANEER Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🧀</span>
+                    <span>PANEER</span>
+                </h3>
+                <p class="category-description">Rich, creamy cottage cheese curries in various traditional preparations</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Paneer Butter Masala</span><span class="price">₹79 / ₹149</span></div>
+                    <div class="menu-item"><span class="item-name">Shahi Paneer</span><span class="price">₹79 / ₹149</span></div>
+                    <div class="menu-item"><span class="item-name">Kadai Paneer</span><span class="price">₹79 / ₹149</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Lababdar</span><span class="price">₹89 / ₹169</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Do Pyaza</span><span class="price">₹89 / ₹169</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Tikka Masala</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Handi</span><span class="price">₹89 / ₹169</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Pasanda</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Bhurji</span><span class="price">₹89 / ₹169</span></div>
+                    <div class="menu-item"><span class="item-name">Palak Paneer</span><span class="price">₹79 / ₹149</span></div>
+                    <div class="menu-item"><span class="item-name">Matar Paneer</span><span class="price">₹79 / ₹149</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Korma</span><span class="price">₹89 / ₹169</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Makhani</span><span class="price">₹89 / ₹169</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Angara</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Toofani</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Kolhapuri</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Methi Malai</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Mushroom</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Chaman</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Jalfrezi</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Kaju Curry</span><span class="price">₹109 / ₹199</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Malai Kofta</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Kofta Curry</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Dilkhush</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Reshmi</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Rajwadi</span><span class="price">₹109 / ₹199</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Lazeez</span><span class="price">₹109 / ₹199</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Nawabi</span><span class="price">₹109 / ₹199</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Maharaja</span><span class="price">₹109 / ₹199</span></div>
+                    <div class="menu-item featured-item"><span class="item-name">Paneer DK Special</span><span class="price">₹119 / ₹219</span></div>
+                </div>
+            </div>
+
+            <!-- GREEN VEGETABLES Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🥬</span>
+                    <span>GREEN VEGETABLES</span>
+                </h3>
+                <p class="category-description">Fresh, seasonal vegetables cooked in aromatic spices and traditional gravies</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Mix Veg</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item"><span class="item-name">Aloo Gobi</span><span class="price">₹59 / ₹109</span></div>
+                    <div class="menu-item"><span class="item-name">Bhindi Fry</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item"><span class="item-name">Bhindi Masala</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Jaipuri</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Handi</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Kolhapuri</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Toofani</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Angara</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Korma</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Makhanwala</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Lababdar</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Do Pyaza</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Jalfrezi</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Kadai</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Mushroom</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Malai Kofta</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Kofta Curry</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Dilkhush</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Reshmi</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Rajwadi</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Lazeez</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Nawabi</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Maharaja</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item featured-item"><span class="item-name">Veg DK Special</span><span class="price">₹109 / ₹199</span></div>
+                </div>
+            </div>
+
+            <!-- KOFTA Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🍛</span>
+                    <span>KOFTA</span>
+                </h3>
+                <p class="category-description">Delicious dumplings in rich, creamy gravies</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Malai Kofta</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Navratan Kofta</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Kashmiri Kofta</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Kofta</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item featured-item"><span class="item-name">DK Special Kofta</span><span class="price">₹99 / ₹179</span></div>
+                </div>
+            </div>
+
+            <!-- RAITA Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🥒</span>
+                    <span>RAITA</span>
+                </h3>
+                <p class="category-description">Cooling yogurt accompaniments to complement your meal</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Boondi Raita</span><span class="price">₹39</span></div>
+                    <div class="menu-item"><span class="item-name">Mix Raita</span><span class="price">₹49</span></div>
+                    <div class="menu-item"><span class="item-name">Pineapple Raita</span><span class="price">₹59</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Raita</span><span class="price">₹49</span></div>
+                    <div class="menu-item"><span class="item-name">Plain Raita</span><span class="price">₹29</span></div>
+                </div>
+            </div>
+
+            <!-- DESSERT Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🍮</span>
+                    <span>DESSERT</span>
+                </h3>
+                <p class="category-description">Sweet endings to your meal</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Gulab Jamun (1 pc)</span><span class="price">₹20</span></div>
+                    <div class="menu-item"><span class="item-name">Gulab Jamun (2 pc)</span><span class="price">₹40</span></div>
+                    <div class="menu-item"><span class="item-name">Rasgulla (1 pc)</span><span class="price">₹20</span></div>
+                    <div class="menu-item"><span class="item-name">Rasgulla (2 pc)</span><span class="price">₹40</span></div>
+                    <div class="menu-item"><span class="item-name">Ice Cream (Vanilla/Strawberry/Butterscotch)</span><span class="price">₹30</span></div>
+                    <div class="menu-item"><span class="item-name">Fruit Cream</span><span class="price">₹40</span></div>
+                </div>
+            </div>
+
+            <!-- RICE & COMBO Section -->
+            <div class="menu-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🍚</span>
+                    <span>RICE & COMBO</span>
+                </h3>
+                <p class="category-description">Aromatic rice preparations and flavorful combinations</p>
+                <div class="menu-grid">
+                    <div class="menu-item"><span class="item-name">Plain Rice</span><span class="price">₹39 / ₹69</span></div>
+                    <div class="menu-item"><span class="item-name">Jeera Rice</span><span class="price">₹49 / ₹89</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Pulao</span><span class="price">₹59 / ₹109</span></div>
+                    <div class="menu-item"><span class="item-name">Matar Pulao</span><span class="price">₹69 / ₹129</span></div>
+                    <div class="menu-item"><span class="item-name">Kashmiri Pulao</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Biryani</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Biryani</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Mushroom Biryani</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item featured-item"><span class="item-name">DK Special Biryani</span><span class="price">₹99 / ₹179</span></div>
+                    <div class="menu-item"><span class="item-name">Veg Fried Rice</span><span class="price">₹79 / ₹139</span></div>
+                    <div class="menu-item"><span class="item-name">Paneer Fried Rice</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item"><span class="item-name">Mushroom Fried Rice</span><span class="price">₹89 / ₹159</span></div>
+                    <div class="menu-item featured-item"><span class="item-name">DK Special Fried Rice</span><span class="price">₹99 / ₹179</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DK Rajoriya</h3>
+                    <p class="footer-tagline">Family Restaurant</p>
+                    <p class="footer-description">Serving authentic North Indian cuisine with love and tradition since our inception. Join us for a memorable dining experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><strong>Phone:</strong> <a href="tel:9893122255">9893122255</a></p>
+                    <p><strong>Location:</strong> Near Minar Residency, JK Road, Bhopal</p>
+                    <p><strong>Hours:</strong> Daily 11:00 AM - 11:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#thali">Thali</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DK Rajoriya Family Restaurant. All rights reserved.</p>
+                <p class="footer-note">Made with ❤️ for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
+
